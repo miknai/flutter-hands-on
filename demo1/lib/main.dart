@@ -10,7 +10,7 @@ void main() => runApp(MaterialApp(
       child: Text('hello there'),
     ),
     floatingActionButton: FloatingActionButton(
-      child: Text('click'),
+//      child: Text('click'),
     ),
   ),
 ));
