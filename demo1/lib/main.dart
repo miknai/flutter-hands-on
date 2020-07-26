@@ -1,19 +1,48 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-  home: Scaffold(
-    appBar: AppBar(
-      title: Text('my first app'),
-      centerTitle: true,
-    ),
-    body: Center(
-      child: Text('hello there'),
-    ),
-    floatingActionButton: FloatingActionButton(
-//      child: Text('click'),
-    ),
-  ),
+  home: Home(),
 ));
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          'my first app',
+          style: TextStyle(
+            fontFamily: 'Pacifico',
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.red[600],
+      ),
+      body: Center(
+        child: Text(
+          'hello there!',
+          style: TextStyle(
+              fontSize: 40.0,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 2.0,
+              color: Colors.grey[600],
+              fontFamily: 'Pacifico'
+          ),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Text(
+          'click',
+          style: TextStyle(
+            fontFamily: 'Pacifico',
+          ),
+        ),
+        backgroundColor: Colors.red[600],
+      ),
+    );
+  }
+}
 
 //void main() {
 //  runApp(MyApp());
